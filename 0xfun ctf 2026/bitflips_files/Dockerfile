@@ -1,3 +1,4 @@
+#this docker image uses diferent libc for some reaseon so you need to pull the libc and recalculate the offsets !
 FROM ubuntu:24.04
 
 RUN apt-get update && apt-get install -y socat && rm -rf /var/lib/apt/lists/*
